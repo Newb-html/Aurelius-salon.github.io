@@ -1,0 +1,99 @@
+*{
+  border: 0;
+  margin: 0;
+}
+#SITE_CONTAINER{
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background-color: black;
+}
+#PROFILE {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0 100px;
+}
+#BIO {
+  margin: 50px 25px;
+  font-size: 18px;
+  color: white;
+}
+.HEADER-CONTAINER{
+  display: grid;
+  grid-template-columns: 1px 1fr 1px;
+  background-image: url(../images/background.png);
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#TITLE {
+  text-align: center;
+  font-size: 60px;
+  background-color: black;
+  color: white;
+}
+.MAIN-NAVIGATION{
+  display:grid;
+  grid-template-rows: 80px 80px 80px 80px 1fr;
+  border: 2px solid black;
+  text-align: center;
+  background-color: grey;
+}
+#MAIN-LOGO {
+  max-height: 80px;
+  max-width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  margin-bottom: -15px;
+}
+#NAV-ITEM{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  justify-content: center;
+  border: 2px solid black;
+}
+.MAIN-BODY{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: 2fr;
+  background-color: black;
+}
+#CAP-1, #CAP-2, #CAP-3 {
+  padding: 100px 80px;
+  min-height: 300px;
+  border: 2px solid white;
+}
+#CAP-2, #CAP-3 {
+  text-align: center;
+}
+#CAP-1{
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+#CAP-2{
+  background-image: url(../images/Hair.jpg);
+  background-size: cover;
+  font-size: 50px;
+}
+#CAP-3{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: black;
+  color: white;
+  font-size: 35px;
+}
+@media only screen and (min-width: 900px) {
+  .MAIN-NAVIGATION{
+    display:grid;
+    grid-template-columns: 80px 80px 100px 80px 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    background-color: grey;
+    border: none;
+  }
